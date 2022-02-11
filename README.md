@@ -12,8 +12,7 @@
 
 ## Live Demo (if available)
 
-
-<!-- ![Capture](https://user-images.githubusercontent.com/5276238/153131626-032e51f5-8054-46d0-b65c-491799b3c2ed.PNG) -->
+![portfolio](https://user-images.githubusercontent.com/5276238/153518868-d239f5c8-3d37-40e6-9b7f-e4f5d242ce1b.PNG)
 
 ## Getting Started
 
