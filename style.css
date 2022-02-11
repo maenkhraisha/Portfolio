@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Inter, Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.main-section-container {
+  background-image: url("/assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  font-weight: 600;
+}
+
+.welcome {
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.main-section-title {
+  color: #172b4d;
+}
+
+.main-section-subtitle {
+  color: #36b37e;
+}
+
+.main-section-paragraph {
+  color: #172b4d;
+  margin-top: 3rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.social-meadia-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-meadia-items {
+  padding: 0 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+}
