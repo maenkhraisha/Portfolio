@@ -14,9 +14,6 @@ ul {
   list-style-type: none;
 }
 
-li {
-  display: inline-block;
-}
 
 .btn {
   background-color: #36b37f;
@@ -150,8 +147,6 @@ li {
 }
 
 .card-lable-container {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   margin: 16px 0;
 }
@@ -173,7 +168,7 @@ li {
   line-height: 16px;
   padding: 8px 12px;
   border-radius: 4px;
-  margin: 0 16px;
+  float : left;
 }
 
 /* end of work section */
