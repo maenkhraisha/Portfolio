@@ -4,7 +4,8 @@
   --general-font: inter, times, serif;
 }
 
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -16,10 +17,6 @@ html,body{
 
 a {
   text-decoration: none;
-}
-
-textarea {
-  height: 114px;
 }
 
 ul {
@@ -39,7 +36,7 @@ ul {
   border: none;
 }
 
-.btn-green {
+.btn-green:hover {
   background-color: #36b37e;
 }
 
@@ -222,18 +219,6 @@ ul {
   color: #172b4d;
 }
 
-.frame1 {
-  position: relative;
-  top: 200px;
-  left: 90%;
-}
-
-.frame2 {
-  position: relative;
-  top: 450px;
-  left: 0;
-}
-
 .aboutme-paragraph {
   font-weight: 400;
   font-style: normal;
@@ -324,20 +309,13 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 189px;
-  background: url(assets/images/frame3.png) no-repeat 100% 90%;
+  background: url("assets/images/frame3.png") no-repeat 100% 90%;
   padding: 5%;
 }
 
 .contact-form-container > ul {
   text-align: center;
 }
-
-/* .contact-form-container::after {
-  content: url("assets/images/frame3.png");
-  position: relative;
-  left: 344px;
-  bottom: 180px;
-} */
 
 .contact-form-title {
   text-align: center;
@@ -360,6 +338,7 @@ textarea {
   padding: 5px;
   margin: 10px 0;
 }
+
 textarea {
   height: 148px;
 }
