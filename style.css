@@ -4,6 +4,11 @@
   --general-font: inter, times, serif;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,16 +19,12 @@ a {
   text-decoration: none;
 }
 
-textarea {
-  height: 114px;
-}
-
 ul {
   padding: 0;
   list-style-type: none;
 }
 
-.btn {
+.btn-green {
   background-color: #36b37f;
   border-radius: 8px;
   padding: 12px;
@@ -32,6 +33,11 @@ ul {
   font-weight: 500;
   text-align: center;
   color: white;
+  border: none;
+}
+
+.btn-green:hover {
+  background-color: #36b37e;
 }
 
 /* header and main section */
@@ -191,6 +197,9 @@ ul {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   row-gap: 50px;
+  background-image: url("assets/images/frame1.png"), url("assets/images/frame2.png");
+  background-position: 100% 0%, 0% 15%;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .aboutme-text-area {
@@ -210,18 +219,6 @@ ul {
   color: #172b4d;
 }
 
-.frame1 {
-  position: relative;
-  top: 200px;
-  left: 90%;
-}
-
-.frame2 {
-  position: relative;
-  top: 450px;
-  left: 0;
-}
-
 .aboutme-paragraph {
   font-weight: 400;
   font-style: normal;
@@ -230,21 +227,6 @@ ul {
   text-align: center;
   color: #42526e;
   margin: 50px 0;
-}
-
-.btn-get-resume {
-  background-color: #36b37f;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 500;
-  text-align: center;
-  color: white;
-}
-
-.btn-get-resume:hover {
-  background-color: #36b37e;
 }
 
 .aboutme-cards-area {
@@ -320,3 +302,68 @@ ul {
 }
 
 /* end of about me section */
+
+/* style of contact form */
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 189px;
+  background: url("assets/images/frame3.png") no-repeat 100% 90%;
+  padding: 5%;
+}
+
+.contact-form-container > ul {
+  text-align: center;
+}
+
+.contact-form-title {
+  text-align: center;
+  font-family: var(--general-font);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 24px 0;
+}
+
+li > input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 48px;
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+textarea {
+  height: 148px;
+}
+
+.contact-form-social-icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-social-meadia-item {
+  font-family: var(--general-font);
+  display: inline-block;
+  padding: 10px;
+}
+
+.footer-email {
+  font-family: var(--general-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+}
+
+/* end of style contact form */
