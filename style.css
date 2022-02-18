@@ -389,7 +389,7 @@ textarea {
   margin-top: 2rem;
 }
 
-.contact-form-social-icon::after{
+.contact-form-social-icon::after {
   content: url("assets/images/frame3.png");
   position: absolute;
   right: 0%;
