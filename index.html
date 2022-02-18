@@ -10,11 +10,28 @@
 <body>
     <!--this is header section-->
     <header class="header-container">
-        <a href="#"><h2 class="welcome">Welcome</h2></a>
-        <nav>
-            <a href="#" class="menu-btn">
-                <img src="/assets/images/Union.png" alt="menu button">
+        <nav class="header-nav">
+            <a  href="#">
+                <h2 class="welcome">Welcome</h2>
             </a>
+            <a href="#">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-items">
+                    <a href="#" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <!--end of header section-->
@@ -22,12 +39,12 @@
     <!--the main section-->
     <main class="main-section-container">
         <section>
-            <h1 class="main-title main-section-title">Hey there. I'm<br>Maen</h1>    
-            <h2 class="main-title main-section-subtitle">I'm a software<br> developer</h2>
+            <h1 class="main-title main-section-title">Hey there. I&#39;m Maen.</h1>    
+            <h2 class="main-title main-section-subtitle">I&#39;m a software developer</h2>
         
             <p class="main-section-paragraph">
                 I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                don&#39;t hestiate to contact me.
+                don’t hestiate to contact me.
             </p>
             <div class="social-meadia-container">
                 <ul>
@@ -58,7 +75,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer">
+            <div class="main-section-footer">
                 <a href="#">
                     <img src="/assets/images/arrow-down.png" alt="arrow down">
                 </a>
@@ -70,8 +87,36 @@
 
     <!--Work section-->
     <section class="work-section-container">
-        <h1 class="work-section-title">My Recent<br>Work</h1>
+        <h1 class="work-section-title">My Recent Work</h1>
         <hr class="hr-line">
+        <div class="work-section-card">
+            <div class="image-area">
+            </div>
+            <div class="desc-area">
+                <div class="card-title"><h4>Multi-Post Stories<br> Gain+Glory</h4></div>
+                <ul class="card-lable-container">
+                    <li class="card-lable">Ruby on rails</li>
+                    <li class="card-lable">css</li>
+                    <li class="card-lable">JavaScipt</li>
+                    <li class="card-lable">html</li>
+                </ul>
+                <div class="btn-green"><a>See Project</a></div>
+            </div>
+        </div>
+        <div class="work-section-card">
+            <div class="image-area">
+            </div>
+            <div class="desc-area">
+                <div class="card-title"><h4>Multi-Post Stories<br> Gain+Glory</h4></div>
+                <ul class="card-lable-container">
+                    <li class="card-lable">Ruby on rails</li>
+                    <li class="card-lable">css</li>
+                    <li class="card-lable">JavaScipt</li>
+                    <li class="card-lable">html</li>
+                </ul>
+                <div class="btn-green"><a>See Project</a></div>
+            </div>
+        </div>
         <div class="work-section-card">
             <div class="image-area">
             </div>
@@ -133,11 +178,12 @@
 
     <!--about me section-->
     <section class="aboutme-container">
-        <div class="aboutme-text-area ">
+        <div class="aboutme-text-area">
                 <h1  class="aboutme-title">About me</h1>
             <p class="aboutme-paragraph">
-                I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                &#39;t hestiate to contact me.
+                I can help you build a product , feature or website Look through some of my work and 
+                experience! If you like what you see and have a project you need coded, 
+                don’t hestiate to contact me.
             </p>            
             <div class="btn-green"><a>Get My Resume</a></div>
         </div>
@@ -191,18 +237,28 @@
     <!--end about me section-->
 
       <!--start of footer section / contact form-->
-      <footer>
-      <form  method="post" action="https://formspree.io/f/xyyowwnj">
-        <section class="contact-form-container">
+    <section class="contact-form-container"> 
         <h2 class="contact-form-title">
-                I&#39;m always interested in hearing about new projects, so if you&#39;d like to chat please get in touch.</h2>
-        <ul>
-            <li><input type="text" placeholder="Full name" required></li>
-            <li><input type="email"  placeholder="Email address" required></li>
-            <li><textarea name="textarea"  maxlength="500" required>Enter text here</textarea></li>
-            <li><input class="btn-green" type="submit" value="Get in touch"></li>
-            <li>
-                <ul class="contact-form-social-icon">
+            I&#39;m always interested in hearing about new projects, so if you&#39;d like to chat please get in touch.
+        </h2>
+      <form  method="post" action="https://formspree.io/f/xyyowwnj">
+            <ul>
+                <li><input id="full-name" type="text" placeholder="Full name" required></li>
+                <li>
+                    <ul class="f-l-name">
+                        <li><input id="first-name" type="text" placeholder="First name" required></li>
+                        <li><input id="last-name" type="text" placeholder="Last name" required></li>
+                    </ul>
+                </li>
+                <li><input type="email"  placeholder="Email address" required></li>
+                <li><textarea name="textarea"  maxlength="500" required>Enter text here</textarea></li>
+                <li><input class="btn-green" type="submit" value="Get in touch"></li>
+            </ul>
+  
+    </form>
+    </section>
+    <footer>
+            <ul class="contact-form-social-icon">
                 <li class="footer-social-meadia-item">
                     <a href="#"><img src="assets/images/twitter.png" alt=""></a></li>
                 <li class="footer-social-meadia-item">
@@ -213,12 +269,8 @@
                     <a href="#"><img src="assets/images/github.png" alt=""></a></li>
                 <li class="footer-social-meadia-item">
                     <a href="#"><img src="assets/images/angellist.png" alt=""></a></li>
-                </ul>
-            </li>
-        </ul>
-        <p class="footer-email">myemailhere@email.com</p>
-        </section>
-    </form>
+            </ul>
+    <p class="footer-email">myemailhere@email.com</p>
     </footer>
     <!-- end of footer section / contact form -->
 </body>
