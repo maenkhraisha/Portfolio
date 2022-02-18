@@ -243,11 +243,11 @@
         </h2>
       <form  class="contact-form-desc" method="post" action="https://formspree.io/f/xyyowwnj">
             <ul>
-                <li><input id="full-name" type="text" placeholder="Full name" required></li>
+                <li><input id="full-name" type="text" maxlength = 30 placeholder="Full name" required></li>
                 <li>
                     <ul class="f-l-name">
-                        <li><input id="first-name" type="text" placeholder="First name" required></li>
-                        <li><input id="last-name" type="text" placeholder="Last name" required></li>
+                        <li id="first-name"><input  maxlength = 30 type="text" placeholder="First name" required></li>
+                        <li id="last-name"><input  maxlength = 30 type="text" placeholder="Last name" required></li>
                     </ul>
                 </li>
                 <li><input type="email"  placeholder="Email address" required></li>

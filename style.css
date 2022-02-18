@@ -415,7 +415,7 @@ textarea {
 /* end of style contact form */
 
 /* Desktop version media queries */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .header-container {
     background-color: transparent;
   }
@@ -433,6 +433,7 @@ textarea {
   .welcome,
   .footer-email,
   .hr-line,
+  .contact-form-social-icon::after,
   #full-name {
     display: none;
   }
@@ -528,7 +529,12 @@ textarea {
   }
 
   #first-name {
-    margin-right: 0.25rem;
+    margin-right: 1rem;
+    flex: 1;
+  }
+
+  #last-name {
+    flex: 1;
   }
 
   .f-l-name {
