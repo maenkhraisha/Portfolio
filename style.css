@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: var(--general-font);
+  background-color: transparent;
 }
 
 a {
@@ -26,14 +27,15 @@ ul {
 
 .btn-green {
   background-color: #36b37f;
-  border-radius: 8px;
-  padding: 12px;
-  font-size: 17px;
-  line-height: 24px;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
   font-weight: 500;
   text-align: center;
   color: white;
   border: none;
+  letter-spacing: 0.03em;
 }
 
 .btn-green:hover {
@@ -48,27 +50,56 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 2.4rem;
-  height: 100vh;
+  height: auto;
 }
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding: 2rem;
   font-weight: 600;
 }
 
-.welcome {
-  color: black;
-  font-weight: 600;
-  font-size: 20px;
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
+.header-nav > a {
+  display: inline-block;
+}
+
+.welcome {
+  color: #28352f;
+  font-weight: 600;
+  font-size: 1.25rem;
+  width: 5.5rem;
+  height: 1.75rem;
+  line-height: 1.75rem;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.bar {
+  width: 1.2rem;
+  border: 0.15rem solid #28352f;
+  background-color: #28352f;
+  margin-top: 0.15rem;
+  border-radius: 0.15rem;
+}
+
+.nav-menu {
+  display: none;
+}
+
+/* end of header section */
+
+/* main section */
 .main-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .main-section-title {
@@ -84,15 +115,14 @@ ul {
   margin-top: 3rem;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   text-align: center;
 }
 
 .social-meadia-container {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .social-meadia-container ul > li {
@@ -100,12 +130,12 @@ ul {
 }
 
 .social-meadia-items {
-  padding: 0 10px;
+  padding: 1.5rem 0.25rem;
 }
 
-.footer {
+.main-section-footer {
   text-align: center;
-  margin-top: 30px;
+  margin: 1.9rem 0;
 }
 
 /* end of header and main section */
@@ -115,24 +145,24 @@ ul {
   font-family: Inter, Times, serif;
   display: grid;
   grid-template-rows: auto auto auto auto;
-  margin: 50px 0;
-  row-gap: 50px;
+  margin: 5rem 1rem;
+  row-gap: 1.25rem;
 }
 
 .work-section-title {
   text-align: center;
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 2.5rem;
+  line-height: 4.4rem;
   color: #172b4d;
   font-family: inherit;
 }
 
 .hr-line {
-  height: 4px;
-  width: 48px;
+  height: 0.25rem;
+  width: 3rem;
   color: #36b37e;
   background-color: #36b37e;
-  border-radius: 24px;
+  border-radius: 1.5rem;
   margin: auto;
 }
 
@@ -141,17 +171,17 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  border: 1px solid #d0d9d4;
-  height: 100vh;
+  border: 0.06rem solid #d0d9d4;
+  height: 70vh;
   background-color: #ebf0ee;
   color: #3a4a42;
-  border-radius: 8px;
-  margin: 0 20px;
+  border-radius: 0.5rem;
+  margin: 0 0.4rem;
 }
 
 .image-area {
   height: 100%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .desc-area {
@@ -160,34 +190,39 @@ ul {
   justify-content: space-around;
   align-items: center;
   background-color: #fff;
-  border-radius: 8px;
-  padding: 16px;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .card-lable-container {
-  align-items: center;
-  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .card-title {
+  color: #172b4d;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
-  line-height: 32px;
-  margin: 16px 0;
+  line-height: 2rem;
 }
 
 .card-lable {
   background-color: #ebf0ee;
+  color: #172b4d;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 8px 12px;
-  border-radius: 4px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
   float: left;
-  margin-right: 8px;
+  margin-top: 0.5rem;
 }
 
 /* end of work section */
@@ -196,7 +231,7 @@ ul {
 .aboutme-container {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
-  row-gap: 50px;
+  row-gap: 1.25rem;
   background-image: url("assets/images/frame1.png"), url("assets/images/frame2.png");
   background-position: 100% 0%, 0% 15%;
   background-repeat: no-repeat, no-repeat;
@@ -207,14 +242,14 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 58px 10%;
+  margin: 3.6rem 10%;
 }
 
 .aboutme-title {
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
   text-align: center;
   color: #172b4d;
 }
@@ -222,18 +257,18 @@ ul {
 .aboutme-paragraph {
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   text-align: center;
   color: #42526e;
-  margin: 50px 0;
+  margin: 3.2rem 0;
 }
 
 .aboutme-cards-area {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  row-gap: 50px;
+  row-gap: 1.25rem;
 }
 
 .aboutme-card-item {
@@ -241,19 +276,19 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100vh;
+  height: 55vh;
   background-color: #ebf0ee;
   color: #3a4a42;
-  border: 1px solid #c1c7d0;
-  border-radius: 8px;
-  margin: 0 20px;
+  border: 0.06rem solid #c1c7d0;
+  border-radius: 0.5rem;
+  margin: 0 1.25rem;
 }
 
 .aboutme-card-logo {
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
-  box-shadow: 0 16px 24px rgb(37 47 137 / 8%);
+  box-shadow: 0 1rem 1.5rem rgb(37 47 137 / 8%);
   border-radius: 50%;
 }
 
@@ -267,10 +302,10 @@ ul {
 .aboutme-card-title {
   font-weight: 600;
   font-style: normal;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: #344563;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 .aboutme-card-details {
@@ -288,14 +323,13 @@ ul {
 
 .aboutme-tags-item {
   background-color: #fff;
-  width: 89px;
-  padding: 12px;
-  border-radius: 8px;
-  margin: 8px;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   letter-spacing: 0.03em;
   color: #36b37e;
   text-align: center;
@@ -308,13 +342,13 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 189px;
-  background: url("assets/images/frame3.png") no-repeat 100% 90%;
-  padding: 5%;
+  padding: 1.25rem;
 }
 
 .contact-form-container > ul {
   text-align: center;
+  bottom: 0%;
+  right: 0%;
 }
 
 .contact-form-title {
@@ -322,48 +356,198 @@ ul {
   font-family: var(--general-font);
   font-weight: 700;
   font-style: normal;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 2.1rem;
+  line-height: 3.25rem;
   color: #172b4d;
-  margin: 24px 0;
+  margin: 1.5rem 0;
 }
 
 li > input[type="text"],
 input[type="email"],
 textarea {
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  height: 48px;
+  border: 0.063rem solid #d0d9d4;
+  border-radius: 0.25rem;
+  height: 3rem;
   width: 100%;
-  padding: 5px;
-  margin: 10px 0;
+  padding: 0.313rem;
+  margin: 0.625rem 0;
 }
 
 textarea {
-  height: 148px;
+  height: 9.25rem;
+}
+
+.btn-get-in-touch {
+  text-align: center;
 }
 
 .contact-form-social-icon {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 20px;
+  background-color: transparent;
+  margin-top: 2rem;
+}
+
+.contact-form-social-icon::after {
+  content: url("assets/images/frame3.png");
+  position: absolute;
+  right: 0%;
 }
 
 .footer-social-meadia-item {
   font-family: var(--general-font);
   display: inline-block;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .footer-email {
   font-family: var(--general-font);
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  line-height: 2rem;
   text-align: center;
   color: #42526e;
+  margin-bottom: 15rem;
 }
 
 /* end of style contact form */
+
+/* Desktop version media queries */
+@media screen and (min-width: 992px) {
+  .header-container {
+    background-color: transparent;
+  }
+
+  .main-section-container {
+    background-image: url("/assets/images/DeskTop-header-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    padding: 20% 5%;
+    margin-top: -6rem;
+  }
+
+  .hamburger,
+  .welcome,
+  .footer-email,
+  .hr-line,
+  .contact-form-social-icon::after,
+  #full-name {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 0.313rem;
+  }
+
+  .nav-link {
+    font-family: var(--general-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    color: #344563;
+    flex-grow: 0;
+    margin: 0 0.625rem;
+  }
+
+  .main-section-paragraph {
+    margin: 1rem 20%;
+  }
+
+  /* work section desktop style */
+  .work-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem;
+  }
+
+  .work-section-card {
+    margin: auto;
+    width: 32%;
+  }
+
+  .work-section-title {
+    width: 100%;
+  }
+
+  /* about me section */
+  .aboutme-cards-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2% 5%;
+  }
+
+  .aboutme-text-area {
+    padding: 0 8rem;
+  }
+
+  .aboutme-card-item {
+    height: 66vh;
+    width: 32%;
+    margin: 0;
+  }
+
+  .aboutme-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 1.25rem;
+    background-image: url("assets/images/desktop-aboutme-2.png"), url("assets/images/desktop-aboutme-1.png");
+    background-position: 100% 0%, 0% 15%;
+    background-size: 20%;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex-direction: row;
+    background:
+      url("assets/images/desktop-contact1.png") no-repeat 0% 115%,
+      url("assets/images/desktop-contact2.png") no-repeat 27% 94%,
+      url("assets/images/desktop-contact3.png") no-repeat 100% 100%;
+    background-size: 15%;
+    padding: 1rem 5rem 10rem;
+  }
+
+  .contact-form-title {
+    width: 30%;
+    text-align: left;
+    margin: 0;
+    padding-right: 0.5rem;
+  }
+
+  .contact-form-desc {
+    width: 70%;
+    text-align: left;
+  }
+
+  #first-name {
+    margin-right: 1rem;
+    flex: 1;
+  }
+
+  #last-name {
+    flex: 1;
+  }
+
+  .f-l-name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-form-social-icon {
+    justify-content: center;
+    margin: 1rem;
+  }
+
+  .footer-social-meadia-item {
+    padding: 0 0.75rem;
+  }
+}
