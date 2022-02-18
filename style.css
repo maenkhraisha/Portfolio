@@ -343,6 +343,7 @@ ul {
   justify-content: space-between;
   padding-bottom: 15rem;
   background: url("assets/images/frame3.png") no-repeat 100% 90%;
+  padding: 0 1.25rem;
 }
 
 .contact-form-container > ul {
@@ -401,7 +402,7 @@ textarea {
 /* end of style contact form */
 
 /* Desktop version media queries */
-@media screen and (min-width: 992px) and (max-width: 1100px) {
+@media screen and (min-width: 600px)  {
   .header-container {
     background-color: transparent;
   }
@@ -509,7 +510,7 @@ textarea {
     padding-right: 0.5rem;
   }
 
-  .contact-form-container > ul {
+  .contact-form-desc {
     width: 55%;
     text-align: left;
   }
