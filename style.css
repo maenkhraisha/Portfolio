@@ -39,7 +39,13 @@ ul {
 }
 
 .btn-green:hover {
-  background-color: #36b37e;
+  box-shadow: 0 8px 16px rgb(54 179 127 / 24%);
+  transform: scale(1.02);
+}
+
+.btn-green:active {
+  background-color: #008552;
+  transform: scale(1.02);
 }
 
 /* header and main section */
@@ -455,10 +461,52 @@ textarea {
     color: #344563;
     flex-grow: 0;
     margin: 0 0.625rem;
+    padding: 0.5rem;
+  }
+
+  .nav-link:hover {
+    font-size: 1rem;
+    text-shadow: 0 0 0.05rem #344563;
+  }
+
+  .nav-menu-underline {
+    visibility: hidden;
+    width: 80%;
+    height: 0.11rem;
+    margin-left: 1rem;
+    background-color: #008552;
+    left: 0;
+  }
+
+  .nav-link:hover + .nav-menu-underline {
+    visibility: visible;
+    animation: underline 1s ease-out infinite;
+  }
+
+  @keyframes underline {
+    0% {
+      width: 0;
+    }
+
+    50% {
+      width: 80%;
+    }
+
+    100% {
+      width: 0%;
+    }
   }
 
   .main-section-paragraph {
     margin: 1rem 20%;
+  }
+
+  .social-meadia-items:hover {
+    transform: scale(1.2);
+  }
+
+  .main-section-footer:hover {
+    transform: scale(1.2);
   }
 
   /* work section desktop style */
@@ -471,6 +519,12 @@ textarea {
   .work-section-card {
     margin: auto;
     width: 32%;
+  }
+
+  .work-section-card:hover {
+    border: 2px outset rgb(23 43 77 / 25%);
+    transform: scale(1.02);
+    box-shadow: 0 0 5px 1px #c5e9da;
   }
 
   .work-section-title {
@@ -493,6 +547,12 @@ textarea {
     height: 66vh;
     width: 32%;
     margin: 0;
+  }
+
+  .aboutme-card-item:hover {
+    border: 2px outset rgb(23 43 77 / 25%);
+    transform: scale(1.02);
+    box-shadow: 0 0 5px 1px #c5e9da;
   }
 
   .aboutme-container {
@@ -542,6 +602,17 @@ textarea {
     justify-content: space-between;
   }
 
+  li > input:hover,
+  li > textarea:hover {
+    border: 2px outset rgb(23 43 77 / 25%);
+    box-shadow: 0 0 5px 1px #c5e9da;
+  }
+
+  li > input:focus,
+  li > textarea:focus {
+    background-color: #ebf0ee;
+  }
+
   .contact-form-social-icon {
     justify-content: center;
     margin: 1rem;
@@ -549,5 +620,9 @@ textarea {
 
   .footer-social-meadia-item {
     padding: 0 0.75rem;
+  }
+
+  .footer-social-meadia-item:hover {
+    transform: scale(1.2);
   }
 }
