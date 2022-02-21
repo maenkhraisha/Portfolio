@@ -427,7 +427,7 @@ textarea {
   }
 
   .main-section-container {
-    background-image: url("/assets/images/DeskTop-header-bg.png");
+    background-image: url("assets/images/DeskTop-header-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
