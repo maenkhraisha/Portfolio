@@ -88,6 +88,12 @@ ul {
   cursor: pointer;
 }
 
+.mobile-menu-list {
+  display: none;
+  width: 100%;
+  padding: 2rem;
+}
+
 .bar {
   width: 1.2rem;
   border: 0.15rem solid #28352f;
