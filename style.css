@@ -91,7 +91,33 @@ ul {
 .mobile-menu-list {
   display: none;
   width: 100%;
+  height: 100vh;
   padding: 2rem;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-list > ul > li {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+  margin-bottom: 40px;
+}
+
+.menu-close-btn{
+  align-self: flex-end;
+}
+
+.menu-close-btn > a{
+  width: 12px;
+  height: 12px;
+  color: #67798E
 }
 
 .bar {
@@ -244,7 +270,8 @@ ul {
   display: grid;
   grid-template-rows: auto auto auto auto auto auto;
   row-gap: 1.25rem;
-  background-image: url("assets/images/frame1.png"), url("assets/images/frame2.png");
+  background-image: url("assets/images/frame1.png"),
+    url("assets/images/frame2.png");
   background-position: 100% 0%, 0% 15%;
   background-repeat: no-repeat, no-repeat;
 }
@@ -565,7 +592,8 @@ textarea {
     display: grid;
     grid-template-rows: auto auto;
     row-gap: 1.25rem;
-    background-image: url("assets/images/desktop-aboutme-2.png"), url("assets/images/desktop-aboutme-1.png");
+    background-image: url("assets/images/desktop-aboutme-2.png"),
+      url("assets/images/desktop-aboutme-1.png");
     background-position: 100% 0%, 0% 15%;
     background-size: 20%;
     background-repeat: no-repeat, no-repeat;
@@ -574,8 +602,7 @@ textarea {
   .contact-form-container {
     display: flex;
     flex-direction: row;
-    background:
-      url("assets/images/desktop-contact1.png") no-repeat 0% 115%,
+    background: url("assets/images/desktop-contact1.png") no-repeat 0% 115%,
       url("assets/images/desktop-contact2.png") no-repeat 27% 94%,
       url("assets/images/desktop-contact3.png") no-repeat 100% 100%;
     background-size: 15%;
