@@ -14,14 +14,14 @@ menuClose.addEventListener('click', () => {
   menuList.style.display = 'none';
 });
 
-menuPortfolio.addEventListener('click',()=>{
+menuPortfolio.addEventListener('click', () =>{
   menuList.style.display = 'none';
 });
 
-menuAbout.addEventListener('click',()=>{
+menuAbout.addEventListener('click', () =>{
   menuList.style.display = 'none';
 });
 
-menuContact.addEventListener('click',()=>{
+menuContact.addEventListener('click', () =>{
   menuList.style.display = 'none';
 });
