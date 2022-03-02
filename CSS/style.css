@@ -50,7 +50,7 @@ ul {
 
 /* header and main section */
 .main-section-container {
-  background-image: url("assets/images/bg.png");
+  background-image: url("./assets/images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
