@@ -74,7 +74,8 @@ const projects = [
     ];
 
 
-let section = document.createElement('portfolio')
+let section = document.createElement('section')
+section.id = 'portfolio';
 section.className = 'work-section-container'
 
 function insertAfter(referenceNode, newNode) {
@@ -135,8 +136,8 @@ function createDom(){
         section.appendChild(sectionTitle)
         section.appendChild(hrElmt)
         section.appendChild(sectionCard)
-        section.appendChild(imgArea)
-        section.appendChild(descArea)
+        sectionCard.appendChild(imgArea)
+        sectionCard.appendChild(descArea)
 
         descArea.appendChild(cardTitle)
 
