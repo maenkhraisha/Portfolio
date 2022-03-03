@@ -36,6 +36,7 @@ ul {
   color: white;
   border: none;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .btn-green:hover {
@@ -46,6 +47,59 @@ ul {
 .btn-green:active {
   background-color: #008552;
   transform: scale(1.02);
+}
+
+/* modal window */
+.modal-container {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: auto;
+  padding: 1rem;
+  width: 90%;
+  height: 90%;
+  overflow: auto;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255);
+}
+
+.modal-image {
+  background: url('/assets/images/modal-mobile-img.png');
+  background-size: contain;
+}
+
+.modal-title {
+  color: #172b4d;
+  font-family: var(--general-font);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.freez {
+  filter: blur(10px);
+}
+
+.modal-button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.modal-desc {
+  color: #344563;
+  font-family: var(--general-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.icon-inside-button {
+  align-items: stretch;
 }
 
 /* header and main section */
@@ -456,6 +510,60 @@ textarea {
     background-color: transparent;
   }
 
+  /* start modal desktop style */
+  .modal-image {
+    background: url('/assets/images/modal-desktop-img.png');
+  }
+
+  .modal-container {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255);
+  }
+
+  .modal-title {
+    color: #172b4d;
+    font-family: var(--general-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .freez {
+    filter: blur(10px);
+  }
+
+  .modal-button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .modal-desc {
+    color: #344563;
+    font-family: var(--general-font);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .icon-inside-button {
+    align-items: stretch;
+  }
+
+  /* end modal desktop style */
   .main-section-container {
     background-image: url("/assets/images/DeskTop-header-bg.png");
     background-repeat: no-repeat;

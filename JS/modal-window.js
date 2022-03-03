@@ -79,14 +79,16 @@ const projects = [
   },
 ];
 
-/* create dynamic work section */
-const section = document.createElement('section');
-section.id = 'work-section';
-section.className = 'work-section-container';
-
 function insertAfter(referenceNode, newNode) {
   referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
+
+/* create dynamic work section */
+const workContainer = document.createElement('section');
+workContainer.id = 'work-section';
+workContainer.className = 'work-section-container';
+const main = document.getElementById('main-section');
+insertAfter(main, workContainer);
 
 const workSection = document.createElement('div');
 const sectionTitle = document.createElement('h1');
@@ -116,11 +118,18 @@ function creatProject(projectNum) {
   button.className = 'btn-green';
   const buttonLink = document.createElement('a');
   buttonLink.textContent = 'See Project';
-  buttonLink.href = '#';
+
+  // button to open modal
+  button.addEventListener('click', () => {
+    const modal = document.querySelector('.modal-container');
+
+    const { body } = document;
+    body.style.position = 'fixed';
+    modal.style.display = 'flex';
+  });
 
   // Append elements to their parent
-
-  workSection.appendChild(workSectionCard);
+  workContainer.appendChild(workSectionCard);
   workSectionCard.appendChild(imgArea);
   workSectionCard.appendChild(descArea);
 
@@ -133,8 +142,6 @@ function creatProject(projectNum) {
 }
 
 function createDom() {
-  const main = document.getElementById('main-section');
-
   sectionTitle.className = 'work-section-title';
   sectionTitle.textContent = 'My Recent Work';
   const hrElmt = document.createElement('hr');
@@ -142,8 +149,6 @@ function createDom() {
 
   workSection.appendChild(sectionTitle);
   workSection.appendChild(hrElmt);
-
-  insertAfter(main, workSection);
 
   projects.forEach((project) => creatProject(project));
 }
