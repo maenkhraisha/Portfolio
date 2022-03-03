@@ -379,6 +379,11 @@ textarea {
   margin: 0.625rem 0;
 }
 
+.email-validation {
+  display: none;
+  color: red;
+}
+
 textarea {
   height: 9.25rem;
 }
