@@ -83,6 +83,11 @@ function insertAfter(referenceNode, newNode) {
   referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
+/* load modal with data */
+function loadModalWithData(projectNum) {
+  const title = document.querySelector('.modal-title');
+  title.textContent = projectNum.title;
+}
 /* create dynamic work section */
 const workContainer = document.createElement('section');
 workContainer.id = 'work-section';
@@ -126,6 +131,8 @@ function creatProject(projectNum) {
     body.style.position = 'fixed';
     body.style.backgroundColor = '#0000003b';
     modal.style.display = 'flex';
+
+    loadModalWithData(projectNum);
   });
   const btnClose = document.querySelector('.modal-btn-close');
   btnClose.addEventListener('click', () => {
