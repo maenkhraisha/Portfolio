@@ -66,18 +66,23 @@ ul {
   border-radius: 16px;
   background-color: rgba(255, 255, 255);
 }
-
-.modal-image {
-  background: url('/assets/images/modal-mobile-img.png');
-  background-size: contain;
+.modal-btn-close {
+  position: absolute;
+  align-self: flex-end;
 }
 
+.modal-card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
 .modal-title {
   color: #172b4d;
   font-family: var(--general-font);
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  margin-top: 1rem;
 }
 
 .freez {
@@ -96,6 +101,7 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin: 1rem 0;
 }
 
 .icon-inside-button {
@@ -511,27 +517,27 @@ textarea {
   }
 
   /* start modal desktop style */
-  .modal-image {
-    background: url('/assets/images/modal-desktop-img.png');
-  }
 
   .modal-container {
     position: fixed;
     display: none;
     flex-direction: column;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
     z-index: 1;
-    margin: auto;
-    padding: 1rem;
-    width: 90%;
-    height: 90%;
-    overflow: auto;
-    border-radius: 16px;
-    background-color: rgba(255, 255, 255);
+
+    box-shadow: 0px 48px 48 0 #252F89   8%;
+  }
+  .modal-image {
+    content: url('/assets/images/modal-desktop-img.png') ;
   }
 
+  .modal-btn-close {
+    height: 100%;
+    width: 100%;
+    align-self: flex-end;
+    background-image: url('/assets/images/modal-destop-close.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
   .modal-title {
     color: #172b4d;
     font-family: var(--general-font);

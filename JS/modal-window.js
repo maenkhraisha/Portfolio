@@ -120,12 +120,18 @@ function creatProject(projectNum) {
   buttonLink.textContent = 'See Project';
 
   // button to open modal
+  const modal = document.querySelector('.modal-container');
+  const { body } = document;
   button.addEventListener('click', () => {
-    const modal = document.querySelector('.modal-container');
-
-    const { body } = document;
     body.style.position = 'fixed';
+    body.style.backgroundColor = '#0000003b';
     modal.style.display = 'flex';
+  });
+  const btnClose = document.querySelector('.modal-btn-close');
+  btnClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+    body.style.position = '';
+    body.style.backgroundColor = '#FFF';
   });
 
   // Append elements to their parent
