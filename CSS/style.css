@@ -18,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -72,6 +73,11 @@ ul {
   align-self: flex-end;
 }
 
+.modal-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+}
 .modal-card {
   display: flex;
   justify-content: flex-start;
@@ -97,6 +103,7 @@ ul {
   justify-content: center;
   gap: 1rem;
   flex: 1;
+  order: 5;
 }
 
 .modal-button > div {
@@ -112,9 +119,6 @@ ul {
   margin: 1rem 0;
 }
 
-.icon-inside-button {
-  align-items: stretch;
-}
 
 /* header and main section */
 .main-section-container {
@@ -176,6 +180,7 @@ ul {
 
 .menu-close-btn {
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .menu-close-btn > a {
@@ -535,11 +540,12 @@ textarea {
     background-color: #d3d3d3;
     border-radius: 2px;
     margin: 0.5rem;
+    cursor: pointer;
     align-self: flex-end;
     content: url('/assets/images/modal-destop-close.png');
   }
 
-  .modal-title-btn-container {
+  .modal-title {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
