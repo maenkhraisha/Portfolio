@@ -1,0 +1,114 @@
+/* modal window */
+.modal-container {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255);
+  }
+  
+  .modal-btn-close {
+    position: absolute;
+    align-self: flex-end;
+  }
+  
+  .modal-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+  }
+  .modal-card {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .modal-title {
+    color: #172b4d;
+    font-family: var(--general-font);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 2rem;
+    flex: 2;
+  }
+  
+  .freez {
+    filter: blur(10px);
+  }
+  
+  .modal-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1;
+    order: 5;
+  }
+  
+  .modal-button > div {
+    flex: 1;
+  }
+  
+  .modal-desc {
+    color: #344563;
+    font-family: var(--general-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 1rem 0;
+  }
+
+  /* desktop style */
+@media screen and (min-width: 992px) {
+    .header-container {
+      background-color: transparent;
+    }
+  
+    /* start modal desktop style */
+  .modal-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid #000;
+  }
+  .modal-btn-close{
+    position: relative;
+    background-color: #d3d3d3;
+    border-radius: 2px;
+    margin: 0.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+    content: url('/assets/images/modal-destop-close.png');
+    border: 3px solid #000;
+  }
+  .modal-image{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    content: url('/assets/images/modal-desktop-img.png');
+    border: 3px solid #000;
+    grid-area: 2/ 1 /2/2;
+  }
+  .modal-title{
+    border: 3px solid #000;
+  }
+    .modal-button{
+      grid-area: 1/2/2/3;
+      border: 3px solid #000;
+    }
+    .modal-card{
+      border: 3px solid #000;
+    }
+    .modal-desc{
+    border: 3px solid #000;
+    }  
+}
+    /* end modal desktop style */

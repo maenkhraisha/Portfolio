@@ -90,6 +90,7 @@ ul {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  margin-top: 2rem;
   flex: 2;
 }
 
@@ -530,25 +531,38 @@ textarea {
   }
 
   /* start modal desktop style */
-
-  .modal-image {
-    content: url('/assets/images/modal-desktop-img.png');
+.modal-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border: 3px solid #000;
+}
+.modal-btn-close{
+  position: relative;
+  background-color: #d3d3d3;
+  border-radius: 2px;
+  margin: 0.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  content: url('/assets/images/modal-destop-close.png');
+  border: 3px solid #000;
+}
+.modal-image{
+  content: url('/assets/images/modal-desktop-img.png');
+  border: 3px solid #000;
+}
+.modal-title{
+  border: 3px solid #000;
+}
+  .modal-button{
+    grid-area: 1/2/2/3;
+    border: 3px solid #000;
   }
-
-  .modal-btn-close {
-    position: relative;
-    background-color: #d3d3d3;
-    border-radius: 2px;
-    margin: 0.5rem;
-    cursor: pointer;
-    align-self: flex-end;
-    content: url('/assets/images/modal-destop-close.png');
+  .modal-card{
+    border: 3px solid #000;
   }
-
-  .modal-title {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
+  .modal-desc{
+  border: 3px solid #000;
   }
 
   /* end modal desktop style */
