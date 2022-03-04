@@ -531,39 +531,26 @@ textarea {
   }
 
   /* start modal desktop style */
-.modal-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  border: 3px solid #000;
-}
-.modal-btn-close{
-  position: relative;
-  background-color: #d3d3d3;
-  border-radius: 2px;
-  margin: 0.5rem;
-  cursor: pointer;
-  align-self: flex-end;
+  .modal-container {
+    display: none;
+    
+  }
+
+  .modal-image {
+    content: url('/assets/images/modal-desktop-img.png');
+  }
+  .modal-btn-close{
+    position: relative;
+    background-color: #d3d3d3;
+    border-radius: 2px;
+    margin: 0.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+    border: 3px solid #000;
   content: url('/assets/images/modal-destop-close.png');
-  border: 3px solid #000;
-}
-.modal-image{
-  content: url('/assets/images/modal-desktop-img.png');
-  border: 3px solid #000;
-}
-.modal-title{
-  border: 3px solid #000;
-}
-  .modal-button{
-    grid-area: 1/2/2/3;
-    border: 3px solid #000;
   }
-  .modal-card{
-    border: 3px solid #000;
-  }
-  .modal-desc{
-  border: 3px solid #000;
-  }
+/* .modal-container {
+
 
   /* end modal desktop style */
   .main-section-container {

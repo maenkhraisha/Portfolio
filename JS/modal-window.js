@@ -136,7 +136,7 @@ function creatProject(projectNum) {
   });
   const btnClose = document.querySelector('.modal-btn-close');
   btnClose.addEventListener('click', () => {
-    modal.style.display = 'none';
+    modal.style.display = 'block';
     body.style.position = '';
     body.style.backgroundColor = '#FFF';
   });
