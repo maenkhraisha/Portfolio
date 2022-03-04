@@ -84,7 +84,7 @@ ul {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 1rem;
+  flex: 2;
 }
 
 .freez {
@@ -96,7 +96,7 @@ ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  flex: 1;
 }
 
 .modal-button > div {
