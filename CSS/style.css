@@ -18,6 +18,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul {
@@ -36,6 +37,7 @@ ul {
   color: white;
   border: none;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .btn-green:hover {
@@ -48,9 +50,100 @@ ul {
   transform: scale(1.02);
 }
 
+/* modal window */
+.wrapper {
+  filter: blur(10px);
+}
+
+.modal-container {
+  position: fixed;
+  display: none;
+  grid-template-columns: repeat(6, 1fr);
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  margin: auto;
+  padding: 1rem;
+  width: 90%;
+  height: 90%;
+  overflow: auto;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255);
+}
+
+.modal-btn-close {
+  position: absolute;
+  right: 0%;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.modal-image {
+  width: 100%;
+  grid-column: 1/-1;
+  order: 1;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.modal-card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  grid-column: 1/6;
+  order: 3;
+}
+
+.modal-title {
+  color: #172b4d;
+  font-family: var(--general-font);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 1rem;
+  width: 100%;
+  grid-column: 1/-1;
+  order: 2;
+}
+
+.freez {
+  filter: blur(10px);
+}
+
+.modal-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  grid-column: 1/-1;
+  order: 5;
+}
+
+.modal-button > div {
+  flex: 1;
+}
+
+.modal-desc {
+  color: #344563;
+  font-family: var(--general-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 1rem 0;
+  width: 100%;
+  grid-column: 1/-1;
+  order: 4;
+}
+
 /* header and main section */
 .main-section-container {
-  background-image: url("assets/images/bg.png");
+  background-image: url("/assets/images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -108,6 +201,7 @@ ul {
 
 .menu-close-btn {
   align-self: flex-end;
+  cursor: pointer;
 }
 
 .menu-close-btn > a {
@@ -210,7 +304,7 @@ ul {
   background-color: #ebf0ee;
   color: #3a4a42;
   border-radius: 0.5rem;
-  margin: 0 0.4rem;
+  margin: 1rem 0.4rem;
 }
 
 .image-area {
@@ -267,9 +361,9 @@ ul {
   grid-template-rows: auto auto auto auto auto auto;
   row-gap: 1.25rem;
   background-image:
-    url("assets/images/frame1.png"),
-    url("assets/images/frame2.png");
-  background-position: 100% 0%, 0% 15%;
+    url("/assets/images/frame1.png"),
+    url("/assets/images/frame2.png");
+  background-position: 100% 0%, 0% 25%;
   background-repeat: no-repeat, no-repeat;
 }
 
@@ -426,7 +520,7 @@ textarea {
 }
 
 .contact-form-social-icon::after {
-  content: url("assets/images/frame3.png");
+  content: url("/assets/images/frame3.png");
   position: absolute;
   right: 0%;
 }
@@ -456,8 +550,59 @@ textarea {
     background-color: transparent;
   }
 
+  /* start modal desktop style */
+  .modal-container {
+    display: none;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .modal-btn-close {
+    position: relative;
+    background-color: #d3d3d3;
+    border-radius: 2px;
+    margin: 0.5rem;
+    cursor: pointer;
+    content: url('/assets/images/modal-destop-close.png');
+    justify-self: end;
+    grid-column: 12/-1;
+    grid-row: 1/1;
+    order: 1;
+  }
+
+  .modal-image {
+    content: url('/assets/images/modal-desktop-img.png');
+    grid-column: 1/-1;
+    grid-row: 2/4;
+    order: 2;
+  }
+
+  .modal-title {
+    grid-column: 1/6;
+    grid-row: 5/span 2;
+    order: 3;
+  }
+
+  .modal-button {
+    grid-column: 7/-1;
+    grid-row: 5/span 1;
+    order: 4;
+  }
+
+  .modal-card {
+    grid-column: 1/12;
+    grid-row: 7/7;
+    order: 5;
+  }
+
+  .modal-desc {
+    grid-column: 1/12;
+    order: 6;
+    grid-row: 8/9;
+  }
+
+  /* end modal desktop style */
   .main-section-container {
-    background-image: url("assets/images/DeskTop-header-bg.png");
+    background-image: url("/assets/images/DeskTop-header-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -590,8 +735,8 @@ textarea {
     grid-template-rows: auto auto;
     row-gap: 1.25rem;
     background-image:
-      url("assets/images/desktop-aboutme-2.png"),
-      url("assets/images/desktop-aboutme-1.png");
+      url("/assets/images/desktop-aboutme-2.png"),
+      url("/assets/images/desktop-aboutme-1.png");
     background-position: 100% 0%, 0% 15%;
     background-size: 20%;
     background-repeat: no-repeat, no-repeat;
@@ -601,9 +746,9 @@ textarea {
     display: flex;
     flex-direction: row;
     background:
-      url("assets/images/desktop-contact1.png") no-repeat 0% 115%,
-      url("assets/images/desktop-contact2.png") no-repeat 27% 94%,
-      url("assets/images/desktop-contact3.png") no-repeat 100% 100%;
+      url("/assets/images/desktop-contact1.png") no-repeat 0% 115%,
+      url("/assets/images/desktop-contact2.png") no-repeat 27% 94%,
+      url("/assets/images/desktop-contact3.png") no-repeat 100% 100%;
     background-size: 15%;
     padding: 1rem 5rem 10rem;
   }

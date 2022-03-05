@@ -5,13 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio website">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="author" content="Maen Kh">
+    <link rel="stylesheet" href="/CSS/style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
-
+    <!-- popup modal -->
+    <section class="modal-container">
+        <img class="modal-btn-close" src="/assets/images/modal-mobile-close.png" alt="">
+        <img class="modal-image" src="/assets/images/modal-mobile-img.png" alt="">
+        <div class="modal-title">
+            <h1 class="modal-title">Keeping track of hundreds of components</h1>
+        </div>
+        <div class="modal-button">
+            <div class="btn btn-green modal-btn"><a href="#">See Live </a><img class="icon-inside-button" src="/assets/images/modal-icon1.png" alt=""></div>
+            <div class="btn btn-green modal-btn"><a href="#">See Source </a> <img class="icon-inside-button" src="/assets/images/modal-icon2.png" alt=""></div>
+        </div>
+        <ul class="modal-card">
+            <li class="card-lable">Ruby on rails</li>
+            <li class="card-lable">css</li>
+            <li class="card-lable">JavaScipt</li>
+            <li class="card-lable">html</li>
+        </ul>
+        <div class="modal-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</div>
+    </section>
     <!-- mobile hamburger menu -->
+    <div id="wrapper" class="">
     <div id="menu-list" class="mobile-menu-list">
         <div id="menu-close-btn" class="menu-close-btn"><a>&#x2715;</a></div>
         <ul>
@@ -101,108 +123,9 @@
     </main>
 
     <!--end of main section-->
-
+    
     <!--Work section-->
-    <section id="portfolio" class="work-section-container">
-        <h1 class="work-section-title">My Recent Work</h1>
-        <hr class="hr-line">
-        <div class="work-section-card">
-            <div class="image-area">
-            </div>
-            <div class="desc-area">
-                <div class="card-title">
-                    <h4>Multi-Post Stories<br> Gain+Glory</h4>
-                </div>
-                <ul class="card-lable-container">
-                    <li class="card-lable">Ruby on rails</li>
-                    <li class="card-lable">css</li>
-                    <li class="card-lable">JavaScipt</li>
-                    <li class="card-lable">html</li>
-                </ul>
-                <div class="btn-green"><a>See Project</a></div>
-            </div>
-        </div>
-        <div class="work-section-card">
-            <div class="image-area">
-            </div>
-            <div class="desc-area">
-                <div class="card-title">
-                    <h4>Multi-Post Stories<br> Gain+Glory</h4>
-                </div>
-                <ul class="card-lable-container">
-                    <li class="card-lable">Ruby on rails</li>
-                    <li class="card-lable">css</li>
-                    <li class="card-lable">JavaScipt</li>
-                    <li class="card-lable">html</li>
-                </ul>
-                <div class="btn-green"><a>See Project</a></div>
-            </div>
-        </div>
-        <div class="work-section-card">
-            <div class="image-area">
-            </div>
-            <div class="desc-area">
-                <div class="card-title">
-                    <h4>Multi-Post Stories<br> Gain+Glory</h4>
-                </div>
-                <ul class="card-lable-container">
-                    <li class="card-lable">Ruby on rails</li>
-                    <li class="card-lable">css</li>
-                    <li class="card-lable">JavaScipt</li>
-                    <li class="card-lable">html</li>
-                </ul>
-                <div class="btn-green"><a>See Project</a></div>
-            </div>
-        </div>
-        <div class="work-section-card">
-            <div class="image-area">
-            </div>
-            <div class="desc-area">
-                <div class="card-title">
-                    <h4>Multi-Post Stories<br> Gain+Glory</h4>
-                </div>
-                <ul class="card-lable-container">
-                    <li class="card-lable">Ruby on rails</li>
-                    <li class="card-lable">css</li>
-                    <li class="card-lable">JavaScipt</li>
-                    <li class="card-lable">html</li>
-                </ul>
-                <div class="btn-green"><a>See Project</a></div>
-            </div>
-        </div>
-        <div class="work-section-card">
-            <div class="image-area">
-            </div>
-            <div class="desc-area">
-                <div class="card-title">
-                    <h4>Multi-Post Stories<br> Gain+Glory</h4>
-                </div>
-                <ul class="card-lable-container">
-                    <li class="card-lable">Ruby on rails</li>
-                    <li class="card-lable">css</li>
-                    <li class="card-lable">JavaScipt</li>
-                    <li class="card-lable">html</li>
-                </ul>
-                <div class="btn-green"><a>See Project</a></div>
-            </div>
-        </div>
-        <div class="work-section-card">
-            <div class="image-area">
-            </div>
-            <div class="desc-area">
-                <div class="card-title">
-                    <h4>Multi-Post Stories<br> Gain+Glory</h4>
-                </div>
-                <ul class="card-lable-container">
-                    <li class="card-lable">Ruby on rails</li>
-                    <li class="card-lable">css</li>
-                    <li class="card-lable">JavaScipt</li>
-                    <li class="card-lable">html</li>
-                </ul>
-                <div class="btn-green"><a>See Project</a></div>
-            </div>
-        </div>
-    </section>
+    <script src="JS/modal-window.js"></script>
     <!--end of work section-->
 
     <!--about me section-->
@@ -308,7 +231,8 @@
     </footer>
     <!-- end of footer section / contact form -->
 
-    <script src="javascript.js"></script>
+    <script src="JS/hamburger-menu.js"></script>
+</div>
 </body>
 
 </html>
