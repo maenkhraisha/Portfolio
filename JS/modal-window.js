@@ -125,12 +125,14 @@ function creatProject(projectNum) {
   buttonLink.textContent = 'See Project';
 
   // button to open modal
+  const wrapperSection = document.getElementById('wrapper');
   const modal = document.querySelector('.modal-container');
   const { body } = document;
   button.addEventListener('click', () => {
     body.style.position = 'fixed';
     body.style.backgroundColor = '#0000003b';
     modal.style.display = 'grid';
+    wrapperSection.classList.add('wrapper');
 
     loadModalWithData(projectNum);
   });
@@ -139,6 +141,7 @@ function creatProject(projectNum) {
     modal.style.display = 'none';
     body.style.position = '';
     body.style.backgroundColor = '#FFF';
+    wrapperSection.classList.remove('wrapper');
   });
 
   // Append elements to their parent

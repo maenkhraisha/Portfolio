@@ -52,7 +52,7 @@ ul {
 
 /* modal window */
 .wrapper {
-  filter: blur(3px);
+  filter: blur(10px);
 }
 
 .modal-container {
