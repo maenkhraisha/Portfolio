@@ -240,27 +240,27 @@
     <!--end about me section-->
 
       <!--start of footer section / contact form-->
-    <section class="contact-form-container"> 
+      <section class="contact-form-container"> 
         <h2 class="contact-form-title">
             I&#39;m always interested in hearing about new projects, so if you&#39;d like to chat please get in touch.
         </h2>
-      <form  class="contact-form-desc" method="post" action="https://formspree.io/f/xyyowwnj">
+        <form id="contact-form" class="contact-form-desc" method="post" action="https://formspree.io/f/xyyowwnj">
             <ul>
-                <li><input id="full-name" type="text" maxlength = 30 placeholder="Full name" required></li>
+                <li><input id="full-name" type="text" maxlength = 30 placeholder="Full name" ></li>
                 <li>
                     <ul class="f-l-name">
                         <li id="first-name"><input  maxlength = 30 type="text" placeholder="First name" required></li>
                         <li id="last-name"><input  maxlength = 30 type="text" placeholder="Last name" required></li>
                     </ul>
                 </li>
-                <li><input id="email" type="email"  placeholder="Email address" required></li>
-                <span id="error" class="email-validation"></span>
+                <li><input id="email" type="email"  placeholder="Email address" required>
+                    <span id="error" class="email-validation"></span>
+                </li>                
                 <li><textarea name="textarea"  maxlength="500" required>Enter text here</textarea></li>
-                <li class="btn-get-in-touch"><input class="btn-green" type="submit" value="Get in touch"></li>
+                <li class="btn-get-in-touch"><input class="btn btn-green" type="submit" value="Get in touch"></li>
             </ul>
-  
-    </form>
-    </section>
+        </form>
+        </section>
     <footer>
             <ul class="contact-form-social-icon">
                 <li class="footer-social-meadia-item">

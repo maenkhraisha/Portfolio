@@ -45,6 +45,12 @@ ul {
 
 .btn-green:active {
   background-color: #008552;
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+.btn-green:focus {
+  background-color: #008552;
   transform: scale(1.02);
 }
 
