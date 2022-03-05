@@ -51,6 +51,10 @@ ul {
 }
 
 /* modal window */
+.wrapper {
+  filter: blur(3px);
+}
+
 .modal-container {
   position: fixed;
   display: none;
@@ -548,7 +552,7 @@ textarea {
 
   /* start modal desktop style */
   .modal-container {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(12, 1fr);
   }
 
