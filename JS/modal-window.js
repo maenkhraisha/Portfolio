@@ -130,7 +130,7 @@ function creatProject(projectNum) {
   button.addEventListener('click', () => {
     body.style.position = 'fixed';
     body.style.backgroundColor = '#0000003b';
-    modal.style.display = 'flex';
+    modal.style.display = 'grid';
 
     loadModalWithData(projectNum);
   });
