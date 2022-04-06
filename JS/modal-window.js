@@ -1,16 +1,15 @@
 const projects = [
   {
-    title: 'Multi-Post Stories \n Gain+Glory',
-    imgMobile: '/assets/images/modal-mobile-img.png',
-    imgDesktop: '/assets/images/modal-desktop-img.png',
+    title: 'To Do List',
+    imgMobile: '/assets/images/projects/ToDomobile.PNG',
+    imgDesktop: '/assets/images/projects/ToDomobile.PNG',
     technologies: [
-      'Ruby on rails',
-      'css',
       'JavaScipt',
+      'css',
       'html',
     ],
-    live_version: '',
-    source: '',
+    live_version: 'https://maenkhraisha.github.io/To-Do-List/',
+    source: 'https://github.com/maenkhraisha/To-Do-List',
   },
   {
     title: 'Multi-Post Stories \n Gain+Glory',
@@ -101,8 +100,11 @@ const sectionTitle = document.createElement('h1');
 function creatProject(projectNum) {
   const workSectionCard = document.createElement('div');
   workSectionCard.className = 'work-section-card';
-  const imgArea = document.createElement('div');
+
+  const imgArea = document.createElement('img');
   imgArea.className = 'image-area';
+  imgArea.setAttribute('src', projectNum.imgDesktop);
+
   const descArea = document.createElement('div');
   descArea.className = 'desc-area';
   const cardTitle = document.createElement('div');
